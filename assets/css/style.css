@@ -1,0 +1,144 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Wrapper for full page layout */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header Above Chat */
+.site-header {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  max-width: 360px;
+}
+
+.site-header h1 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Chat Container (phone look) */
+.chat-container {
+  width: 360px;
+  height: 540px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Header (like Instagram DM top) */
+.chat-header {
+  padding: 12px 15px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Chat Message Area */
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+/* Message Bubble Base Style */
+.bubble {
+  max-width: 75%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  border-radius: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Message from "You" */
+.you {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Message from "Bot" */
+.bot {
+  background-color: #e5e5e5;
+  align-self: flex-start;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Chat Nav Buttons */
+.chat-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #333;
+  background-color: #eee;
+  padding: 8px 14px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #dcdcdc;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
