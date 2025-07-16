@@ -31,7 +31,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000000;
   width: 100%;
   max-width: 360px;
 }
@@ -44,7 +44,7 @@ body {
 
 .tagline {
   font-size: 0.9rem;
-  color: #666;
+  color: #000000;
 }
 
 /* Chat Container (phone look) */
@@ -138,10 +138,10 @@ body {
 .site-footer {
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #050404;
   width: 100%;
   max-width: 360px;
   text-align: center;
   font-size: 0.8rem;
-  color: #aaa;
+  color: #000000;
 }

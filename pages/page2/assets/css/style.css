@@ -1,9 +1,14 @@
 /* === Base Font Styles === */
 body {
-  margin: 0;
-  padding: 0;
+  background-image: url('../imgs/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
   font-family: 'Lato', sans-serif;
-  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
 }
 
 /* === Header === */
