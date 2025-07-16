@@ -66,12 +66,7 @@ WD-FINALS/
 │   ├── css/
 │   │   └── style.css
 │   └── imgs/
-│       ├── bg1.jpeg
-│       ├── Close-up of macaroons and chocolates.jpeg
 │       ├── download (5).jpeg
-│       ├── Drop Cap Design.jpeg
-│       ├── Premium Vector _ Watercolor florals.jpeg
-│       ├── try.jpeg
 │       └── logo.png
 │
 ├── pages/
