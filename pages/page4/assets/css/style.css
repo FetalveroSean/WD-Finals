@@ -1,0 +1,145 @@
+/* === Google Fonts (include in HTML head) ===
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+*/
+
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* === Header === */
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Lato', sans-serif;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #007BFF;
+  font-family: 'Playfair Display', serif;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+nav a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* === Feedback Page Styles === */
+.feedback-section {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.feedback-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.feedback-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.feedback-form label {
+  font-weight: bold;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-form button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+}
+
+/* === Footer === */
+footer {
+  background-color: #f9f9f9;
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 80px;
+  font-family: 'Lato', sans-serif;
+}
+
+footer::before {
+  content: "✨";
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}

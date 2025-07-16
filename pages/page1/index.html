@@ -13,57 +13,67 @@
     <div class="site-title">Sean's Website</div>
     <nav>
       <a href="../../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="../page2/index.html">Projects</a>
+      <a href="../page3/index.html">Contacts</a>
+      <a href="../page4/index.html">Feedback</a>
     </nav>
   </header>
 
-  <!-- About Section -->
-  <main class="container">
-    <h1>About Me</h1>
-    <p>Hello! I'm Sean Kyle C. Fetalvero. I'm passionate about web development, design, and learning new technologies. 
-    In my free time, I love playing online games, experimenting with code, and exploring creative projects. 
-    I’m aiming to become a full-stack developer and build beautiful, functional web apps that make life better.</p>
-  </main>
+  <!-- Main Content Area -->
+  <div class="main-container">
 
-  <!-- Education Section -->
-  <section class="container">
-    <h1>Education</h1>
-    <p><strong>Current:</strong> Bachelor of Science in Inforation Technology<br
-       <strong>School:</strong> [Your University Name]<br>
-       <strong>Expected Graduation:</strong> 202X</p>
+    <!-- Left Column -->
+    <div class="left-column">
 
-    <p><strong>Senior High School:</strong> [Your SHS School]<br>
-       <strong>Strand:</strong> STEM (Science, Technology, Engineering, and Mathematics)<br>
-       <strong>Graduated:</strong> 202X</p>
-  </section>
+      <!-- About Me Box -->
+      <section class="info-box">
+        <h1>About Me</h1>
+        <p><strong>Name:</strong> Sean Kyle C. Fetalvero</p>
+        <p><strong>Age:</strong> 22</p>
+        <p><strong>Location:</strong> Pasig City</p>
+        <p><strong>Course:</strong> BSITBA</p>
+        <p><strong>Hobbies:</strong> Playing online games, reading manga/manhwa, watching movies and anime, and exploring new places</p>
+      </section>
+
+      <!-- Education Box -->
+      <section class="info-box">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Present:</strong> FEU Tech – BSITBA: Learning advanced IT & business analytics with hands-on industry training.</li>
+          <li><strong>Previous:</strong> UST – BSECE: Focused on electronics and communication systems.</li>
+          <li><strong>Previous:</strong> FEU SHS – STEM Strand: Foundation in science, technology, and mathematics.</li>
+          <li><strong>Previous:</strong> PCC JHS – Basic junior high education and leadership experience.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <div class="chatbox">
+        <div class="chat-header">Chat</div>
+        <div class="chat-body">
+          <div class="bubble you">Hey there! 👋 Welcome to my space.</div>
+        <div class="bubble bot">Hey Sean! Nice setup. What’s this site about?</div>
+          <div class="bubble bot">Hey Sean! 👋</div>
+          <div class="bubble you">Hello!</div>
+          <div class="bubble bot">What's your favorite hobby?</div>
+          <div class="bubble you">Reading manga and traveling!</div>
+          <div class="bubble bot">Nice choices!</div>
+        </div>
+      </div>
+
+      <div class="profile-photo">
+        <img src="./assets/imgs/test.jpeg" alt="Sean's Photo">
+      </div>
+    </div>
+
+  </div>
 
   <!-- Footer -->
   <footer>
     © 2025 Sean Fetalvero • All rights reserved.
   </footer>
-
-  <!-- Floating Chatbox -->
-  <div class="floating-chatbox">
-    <div class="chat-header">Chat</div>
-    <div class="chat-body">
-      <div class="bubble bot">Hey there! 👋</div>
-      <div class="bubble you">Hi! I'm Sean!</div>
-      <div class="bubble bot">Mind sharing something about yourself?</div>
-      <div class="bubble you">Sure, I love building things with code. 😄</div>
-      <div class="bubble bot">That's awesome! What's your favorite language?</div>
-      <div class="bubble you">Right now, it's JavaScript — but I also like Python.</div>
-      <div class="bubble bot">Nice! Do you build websites?</div>
-      <div class="bubble you">Yes! This one you're looking at now. 😎</div>
-      <div class="bubble bot">Very cool. Keep it up, Sean!</div>
-    </div>
-  </div>
-
-  <!-- Floating Photo -->
-  <div class="floating-photo">
-    <img src="./assets/img/sean-profile.jpg" alt="Sean's photo" />
-  </div>
 
 </body>
 </html>

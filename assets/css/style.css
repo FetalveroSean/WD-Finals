@@ -6,13 +6,16 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-image: url('../imgs/download\ \(5\).jpeg'); /* ✅ adjust the path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 30px;
-  min-height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Wrapper for full page layout */

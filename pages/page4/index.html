@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback – Sean</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="site-title">Sean's Website</div>
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../page1/index.html">About</a>
+      <a href="../page2/index.html">Contacts</a>
+      <a href="../page3/index.html">Projects</a>
+    </nav>
+  </header>
+
+  <!-- Feedback Form Section -->
+  <main class="feedback-section">
+    <h1>We’d Love Your Feedback!</h1>
+    <p>Your opinion helps improve my website and future projects. Please fill out the form below.</p>
+
+    <form class="feedback-form" action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="rating">How do you rate this site?</label>
+      <select id="rating" name="rating" required>
+        <option value="">Select rating</option>
+        <option value="5">🌟🌟🌟🌟🌟 – Excellent</option>
+        <option value="4">🌟🌟🌟🌟 – Good</option>
+        <option value="3">🌟🌟🌟 – Average</option>
+        <option value="2">🌟🌟 – Needs Work</option>
+        <option value="1">🌟 – Poor</option>
+      </select>
+
+      <label for="message">Additional Comments:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your thoughts here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sean Fetalvero • Built with creativity and feedback in mind.
+  </footer>
+
+</body>
+</html>
