@@ -5,20 +5,31 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* === Header === */
 header {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ccc;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .site-title {
@@ -39,11 +50,12 @@ nav a {
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
   background-color: #e0e0e0;
+  transform: translateY(-2px);
 }
 
 /* === Projects Layout === */
@@ -54,16 +66,28 @@ nav a:hover {
   justify-content: space-between;
   gap: 40px;
   padding: 0 20px;
-  flex-wrap: wrap; /* ensures responsiveness */
+  flex-wrap: wrap;
+  animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .project-box {
-  width: 48%; /* side-by-side, leaving space for gap */
-  background-color: #fff;
+  width: 48%;
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project-box img {
@@ -73,6 +97,11 @@ nav a:hover {
   border-radius: 12px;
   margin-bottom: 15px;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-box img:hover {
+  transform: scale(1.02);
 }
 
 .project-box h2 {
@@ -100,23 +129,25 @@ nav a:hover {
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 /* === Footer === */
 footer {
-  margin-top: 0px;
-  background-color: #ffffff;
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #ccc;
   text-align: center;
   padding: 15px 0;
   font-size: 0.9rem;
   color: #888;
   font-family: 'Lato', sans-serif;
+  animation: fadeIn 1.5s ease;
 }
 
 /* === Responsive: stack on smaller screens === */

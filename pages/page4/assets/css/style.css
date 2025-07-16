@@ -19,11 +19,17 @@ body {
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
+  animation: fadeInBody 1s ease;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* === Header === */
 header {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid #e0e0e0;
   padding: 20px 40px;
   display: flex;
@@ -32,7 +38,18 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  font-family: 'Lato', sans-serif;
+  animation: slideInDown 0.6s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .site-title {
@@ -60,23 +77,43 @@ nav a {
 nav a:hover {
   background-color: #007BFF;
   color: #fff;
+  transform: scale(1.05);
 }
 
 /* === Feedback Page Styles === */
 .feedback-section {
   max-width: 700px;
   margin: 50px auto;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.95);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
   text-align: center;
+  animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .feedback-section h1 {
   font-size: 2rem;
   margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
+  color: #007BFF;
+  animation: pulseHeading 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulseHeading {
+  from { letter-spacing: 0px; }
+  to { letter-spacing: 1px; }
 }
 
 .feedback-section p {
@@ -86,6 +123,7 @@ nav a:hover {
   font-family: 'Lato', sans-serif;
 }
 
+/* === Form Styling === */
 .feedback-form {
   display: flex;
   flex-direction: column;
@@ -96,7 +134,6 @@ nav a:hover {
 .feedback-form label {
   font-weight: bold;
   color: #333;
-  font-family: 'Lato', sans-serif;
 }
 
 .feedback-form input,
@@ -109,12 +146,19 @@ nav a:hover {
   width: 100%;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  transition: 0.3s ease;
+  background-color: #fdfdfd;
 }
 
-.feedback-form textarea {
-  resize: vertical;
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
+/* === Button Styling === */
 .feedback-form button {
   padding: 12px 20px;
   background-color: #007BFF;
@@ -123,12 +167,13 @@ nav a:hover {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: 'Lato', sans-serif;
 }
 
 .feedback-form button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
 /* === Footer === */
@@ -141,6 +186,7 @@ footer {
   color: #666;
   margin-top: 80px;
   font-family: 'Lato', sans-serif;
+  animation: fadeIn 2s ease;
 }
 
 footer::before {
@@ -148,4 +194,30 @@ footer::before {
   display: block;
   font-size: 1.5rem;
   margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .feedback-section {
+    margin: 30px 20px;
+    padding: 30px 20px;
+  }
 }

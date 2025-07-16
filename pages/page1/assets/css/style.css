@@ -12,19 +12,32 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
+  animation: fadeInBody 1s ease-in;
 }
+
+/* Fade in for whole page */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* === Header === */
 header {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ccc;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: slideInDown 1s ease;
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .site-title {
@@ -45,11 +58,12 @@ nav a {
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
   background-color: #e0e0e0;
+  transform: scale(1.05);
 }
 
 /* === Layout === */
@@ -60,6 +74,17 @@ nav a:hover {
   margin: 40px auto;
   flex: 1;
   padding: 0 20px;
+}
+
+/* Slide-in animation */
+.left-column,
+.right-column {
+  animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .left-column {
@@ -78,10 +103,16 @@ nav a:hover {
 
 /* === Info Boxes (About Me & Education) === */
 .info-box {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.92);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
 }
 
 .info-box h1,
@@ -105,7 +136,7 @@ nav a:hover {
 
 /* === Chatbox === */
 .chatbox {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid #ccc;
   border-radius: 16px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -113,6 +144,8 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   height: 270px;
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 1.2s ease;
 }
 
 .chat-header {
@@ -133,6 +166,7 @@ nav a:hover {
   background-color: #fafafa;
 }
 
+/* Message bubbles */
 .bubble {
   max-width: 80%;
   padding: 10px 14px;
@@ -140,6 +174,13 @@ nav a:hover {
   border-radius: 16px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   word-wrap: break-word;
+  opacity: 0;
+  animation: bubbleIn 0.5s ease forwards;
+}
+
+@keyframes bubbleIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .you {
@@ -163,7 +204,8 @@ nav a:hover {
   margin: 0 auto;
   border-radius: 5%;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease;
 }
 
 .profile-photo img {
@@ -174,13 +216,20 @@ nav a:hover {
 
 /* === Footer === */
 footer {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #ccc;
   text-align: center;
   padding: 15px 0;
   font-size: 0.9rem;
   color: #888;
   font-family: 'Lato', sans-serif;
+  animation: fadeIn 2s ease;
+}
+
+/* Reuseable fadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* === Responsive === */
