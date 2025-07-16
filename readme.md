@@ -111,8 +111,11 @@ WD-FINALS/
 
 ---
 
-| Resource Type | Description                     | Link                                       |
-| ------------- | ------------------------------- | ------------------------------------------ |
-| Photos        | Character and background images | [Pinterest](https://www.pinterest.com)     |
-| Photos        | General image search and assets | [Google Images](https://images.google.com) |
+## Resources
+
+| Title         | Purpose                         | Link                        |
+| ------------- | ------------------------------- | --------------------------- |
+| pinterest     | where i got my bg imgs          | (https://www.pinterest.com) |
+| google        | also where i got my bg imgs     | (https://www.google.com/)   |
+| Facebook      | where i got the photo of myself | (https://www.facebook.com/) |
 
