@@ -115,7 +115,14 @@ WD-FINALS/
 
 | Title         | Purpose                         | Link                        |
 | ------------- | ------------------------------- | --------------------------- |
-| pinterest     | where i got my bg imgs          | (https://www.pinterest.com) |
-| google        | also where i got my bg imgs     | (https://www.google.com/)   |
-| Facebook      | where i got the photo of myself | (https://www.facebook.com/) |
+| Pinterest     | Source of aesthetic background  |(https://www.pinterest.com)  |
+|               | images used for page designs    |                             |
+|               |                                 |                             |
+| Google        | Additional source for           |(https://www.google.com/)    | 
+|               | high-quality and calming        |                             |
+|               | background visuals              |                             |
+|               |                                 |                             |
+| Facebook      | Personal source for profile     |(https://www.facebook.com/)  |
+|               | photo to personalize the        |                             |
+|               | "About Me" section              |                             |
 
