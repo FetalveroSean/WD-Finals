@@ -1,4 +1,3 @@
-/* === Reset and Base Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  background-image: url('../imgs/download%20(5).jpeg'); /* Make sure the path is correct */
+  background-image: url('../imgs/download%20(5).jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,13 +18,11 @@ body {
   animation: fadeInBody 1s ease-in-out;
 }
 
-/* Smooth fade-in */
 @keyframes fadeInBody {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Wrapper for full page layout */
 .site-wrapper {
   display: flex;
   flex-direction: column;
@@ -33,7 +30,6 @@ body {
   width: 100%;
 }
 
-/* === Header === */
 .site-header {
   text-align: center;
   margin-bottom: 10px;
@@ -55,7 +51,6 @@ body {
   color: #000000;
 }
 
-/* === Chat Container === */
 .chat-container {
   width: 360px;
   height: 540px;
@@ -70,7 +65,6 @@ body {
   animation: fadeInUp 1.2s ease;
 }
 
-/* Chat Header */
 .chat-header {
   padding: 12px 15px;
   background: #fff;
@@ -83,7 +77,6 @@ body {
   color: #222;
 }
 
-/* Chat Body */
 .chat-body {
   flex: 1;
   padding: 15px;
@@ -95,7 +88,6 @@ body {
   animation: fadeIn 2s ease;
 }
 
-/* Message Bubbles */
 .bubble {
   max-width: 75%;
   padding: 12px 16px;
@@ -122,7 +114,6 @@ body {
   border-bottom-left-radius: 4px;
 }
 
-/* Nav Buttons */
 .chat-nav {
   display: flex;
   justify-content: space-around;
@@ -146,7 +137,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Footer */
 .site-footer {
   margin-top: 20px;
   padding-top: 10px;
@@ -158,7 +148,6 @@ body {
   color: #000000;
 }
 
-/* === Animations === */
 @keyframes slideInDown {
   from { transform: translateY(-30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }

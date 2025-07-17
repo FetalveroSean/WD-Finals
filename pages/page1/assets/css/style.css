@@ -1,11 +1,9 @@
-/* === Reset === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === Body with Background Image === */
 body {
   background-image: url('../imgs/bg3.jpeg');
   background-size: cover;
@@ -18,13 +16,11 @@ body {
   animation: fadeInBody 1s ease-in;
 }
 
-/* Fade in for whole page */
 @keyframes fadeInBody {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* === Header === */
 header {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ccc;
@@ -66,7 +62,6 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* === Layout === */
 .main-container {
   display: flex;
   gap: 40px;
@@ -76,7 +71,6 @@ nav a:hover {
   padding: 0 20px;
 }
 
-/* Slide-in animation */
 .left-column,
 .right-column {
   animation: fadeInUp 1.2s ease;
@@ -101,7 +95,6 @@ nav a:hover {
   gap: 30px;
 }
 
-/* === Info Boxes (About Me & Education) === */
 .info-box {
   background-color: rgba(255, 255, 255, 0.92);
   padding: 30px;
@@ -134,7 +127,6 @@ nav a:hover {
   padding-left: 20px;
 }
 
-/* === Chatbox === */
 .chatbox {
   background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid #ccc;
@@ -166,7 +158,6 @@ nav a:hover {
   background-color: #fafafa;
 }
 
-/* Message bubbles */
 .bubble {
   max-width: 80%;
   padding: 10px 14px;
@@ -197,7 +188,6 @@ nav a:hover {
   border-bottom-left-radius: 4px;
 }
 
-/* === Profile Photo === */
 .profile-photo {
   height: 260px;
   width: 400px;
@@ -214,7 +204,6 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* === Footer === */
 footer {
   background-color: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #ccc;
@@ -226,13 +215,11 @@ footer {
   animation: fadeIn 2s ease;
 }
 
-/* Reuseable fadeIn */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* === Responsive === */
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
