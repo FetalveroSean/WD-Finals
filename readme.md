@@ -111,9 +111,18 @@ WD-FINALS/
 
 ---
 
-| Title     | Purpose                                    | Link                                   |
-| --------- | ------------------------------------------ | -------------------------------------- |
-| Pinterest | Source of aesthetic background images      | [Pinterest](https://www.pinterest.com) |
-| Google    | Additional high-quality background visuals | [Google](https://www.google.com)       |
-| Facebook  | Personal source for profile photo          | [Facebook](https://www.facebook.com)   |
+## Resources
+
+| Title         | Purpose                         | Link                        |
+| ------------- | ------------------------------- | --------------------------- |
+| Pinterest     | Source of aesthetic background  |(https://www.pinterest.com)  |
+|               | images used for page designs    |                             |
+|               |                                 |                             |
+| Google        | Additional source for           |(https://www.google.com/)    | 
+|               | high-quality and calming        |                             |
+|               | background visuals              |                             |
+|               |                                 |                             |
+| Facebook      | Personal source for profile     |(https://www.facebook.com/)  |
+|               | photo to personalize the        |                             |
+|               | "About Me" section              |                             |
 
